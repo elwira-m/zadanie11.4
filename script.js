@@ -2,7 +2,7 @@
 
 //tworzenie 'klasy' Phone z wlasciwosciami brand itp.; parametry z uzyciem 'this'
 function Phone(brand, price, color, weight) {
-	this.brand = brand;			//by using this, the "brand" property of /the object
+	this.brand = brand;			//by using this, the "brand" property of the object
 	this.price = price;		// we create will assume the value of the brand argument
 	this.color = color;
 	this.weight = weight;
