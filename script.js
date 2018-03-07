@@ -25,3 +25,19 @@ SamsungGalaxyS6.printInfo();
 var OnePlusOne = new Phone('OnePlus', 1420, 'graphite', '5.81oz');
 
 OnePlusOne.printInfo()
+
+Phone.prototype.isCheapest = function() {
+	var pr1 = iPhone6S.price;
+	var pr2 = SamsungGalaxyS6.price;
+	var pr3 = OnePlusOne.price;
+		if ((pr1 < pr2) && (pr1 < pr3)) {
+			console.log(' iPhone6S is the cheapest!')
+		} else  if ((pr2 < pr3) && (pr2 < pr1)) {
+			console.log('SamsungGalaxyS6 is the cheapest!')
+		} else {
+			console.log('OnePlusOne is the cheapest!')
+		}
+}
+
+iPhone6S.isCheapest();   //dlaczego? jak inaczej wywolac?
+						//no i wszystko do skrocenia
