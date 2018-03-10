@@ -41,3 +41,18 @@ Phone.prototype.isCheapest = function() {
 
 iPhone6S.isCheapest();   //dlaczego? jak inaczej wywolac?
 						//no i wszystko do skrocenia
+//od Michala
+var phones = [
+  iPhone6S,
+  SamsungGalaxyS6,
+  OnePlusOne
+];
+
+var cheapestPhone = phones[0];
+phones.forEach(function(phone) {
+  if (cheapestPhone.price > phone.price) {
+    cheapestPhone = phone;
+  }
+});
+
+console.log("Cheapest phone - " + cheapestPhone.brand);
